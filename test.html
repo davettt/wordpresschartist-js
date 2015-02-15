@@ -1,28 +1,25 @@
-<html><head>
-<link rel="stylesheet" href="/wordpresschartist-js/chartist.min.css" media="all"/>
-
-<script src="/wordpresschartist-js/chartist.min.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <link href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <title>Chartist | Simple line chart</title>
 </head>
 <body>
-<script type="text/javascipt">
-var data = { 
-	labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'], 
-	series: [ 
-		{ 
-			data: [5, 2, 4, 2, 0] 
-		}
-	] 
-}; 
-// Create a new line chart object where as first parameter we pass in a selector 
-// that is resolving to our chart container element. The Second parameter 
-// is the actual data object. 
-var options = {
-  width: 300,
-  height: 200
-};
-
-new Chartist.Line('.ct-chart', data,options);
+  <div class="ct-chart"></div>
+  <script type="text/javascript">
+  new Chartist.Line('.ct-chart', {
+  labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
+  series: [
+    [2, 3, 2, 4, 5],
+    [0, 2.5, 3, 2, 3],
+    [1, 2, 2.5, 3.5, 4]
+  ]
+}, {
+  width: 320,
+  height: 240
+});
 </script>
-Include in HTML: <div class="ct-chart ct-perfect-fourth"></div>
 </body>
- </html>
+</html>
