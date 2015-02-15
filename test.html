@@ -10,19 +10,20 @@
   <div class="ct-chart"></div>
   <script type="text/javascript">
   var data = { 
-	labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'], 
+	labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'], 
 	series: [ 
-		{ 
-			data: [5, 2, 4, 2, 0] 
-		}
+		[30,20,80,160,50] ,
+		[0,200,83,60,5] ,
+		[130,20,50,16,50] ,
+		[302,80,16,5,0] 
 	] 
 }; 
 // Create a new line chart object where as first parameter we pass in a selector 
 // that is resolving to our chart container element. The Second parameter 
 // is the actual data object. 
 var options = {
-  width: 300,
-  height: 200
+  width: 800,
+  height: 1200
 };
 
 new Chartist.Line('.ct-chart', data,options);
