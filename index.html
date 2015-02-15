@@ -35,9 +35,12 @@
 
 <p>Include in head:
 
+&lt;html&gt;&lt;head&gt;&lt;link rel=stylesheet href=bower_components/chartist/dist/chartist.min.css&gt;&lt;script src=bower_components/chartist/dist/chartist.min.js&gt;&lt;/script&gt;&lt;/head&gt;&lt;/html&gt;
+
     </p>
 
 <p>Include javascript:
+<br/>
 var data = {
   // A labels array that can contain any sort of values
   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
@@ -45,14 +48,18 @@ var data = {
   series: [
     [5, 2, 4, 2, 0]
   ]
-};</p>
-
-<p>// Create a new line chart object where as first parameter we pass in a selector
+};
+// Create a new line chart object where as first parameter we pass in a selector
 // that is resolving to our chart container element. The Second parameter
 // is the actual data object.
 new Chartist.Line('.ct-chart', data);</p>
 
-<p>Include in HTML:</p>
+<p>Include in HTML:
+&lt;div class=ct-chart ct-perfect-fourth&gt;&lt;/div&gt;
+</p>
+
+and more instructions here:
+http://gionkunz.github.io/chartist-js/getting-started.html
 
 <div></div>
         </section>
